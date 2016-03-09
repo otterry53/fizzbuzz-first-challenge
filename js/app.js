@@ -1,14 +1,13 @@
 $(document).ready(function () {
     for (var myNumber = 1; myNumber <= 100; myNumber++) {
         if (myNumber % 15 === 0) {
-            $('body').append("<br>fizzbuzz");
+            $('body').append("<p>FizzBuzz</p>");
         } else if (myNumber % 3 === 0) {
-            $('body').append("<br>fizz");
+            $('body').append("<p>Fizz</p>");
         } else if (myNumber % 5 === 0) {
-            $('body').append("<br>buzz");
+            $('body').append("<p>Buzz</p>");
         } else {
-            $('body').append("<br>" + myNumber);
+            $('body').append("<p>" + myNumber + "</p>");
         }
     }
 });
-//fix github
